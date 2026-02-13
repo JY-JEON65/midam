@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Midam | 미담 소개 - 미네랄이 만드는 맛의 기준</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;700;900&family=Outfit:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --brand-teal: #2D5A5E;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #F9F7F2;
+            color: #1A1A1A;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .font-serif {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        ::selection {
+            background: var(--brand-teal);
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Premium Scrollbar */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F9F7F2;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #D1D1D1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2D5A5E;
+        }
+
+        .shadow-3xl {
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.15);
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center">
+            <a href="./index.html"
+                class="text-2xl font-serif tracking-tighter text-[#1A1A1A] font-black cursor-pointer">MIDAM SHOP</a>
+            <a href="./index.html"
+                class="text-xs font-bold tracking-[0.2em] uppercase text-[#1A1A1A] hover:text-[#2D5A5E] transition-colors">←
+                Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-40 bg-white overflow-hidden">
+        <!-- Background Image with Filters -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#F9F7F2]/50 to-[#F9F7F2]"></div>
+            <img src="./images/about-1.png" alt="About Background"
+                class="w-full h-full object-cover grayscale opacity-20" />
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-8">
+            <div class="max-w-3xl">
+                <span class="text-xs uppercase tracking-[0.5em] text-[#2D5A5E] font-bold mb-8 block fade-in">About
+                    Midam</span>
+                <h1 class="text-5xl md:text-7xl font-serif text-[#1A1A1A] leading-tight mb-12 tracking-tight fade-in">
+                    미네랄이 <br /> 맛을 만듭니다.
+                </h1>
+                <p class="text-xl md:text-2xl text-[#555] font-light leading-relaxed max-w-2xl fade-in">
+                    미담은 단순한 식품 브랜드가 아닙니다. <br />
+                    우리는 매일 식탁에서 시작되는 맛의 철학을 만드는 기업입니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-32 md:py-56 bg-[#F9F7F2]">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-24 items-center">
+                <div class="space-y-12 fade-in">
+                    <div>
+                        <span class="text-xs uppercase tracking-[0.3em] text-[#2D5A5E] font-bold block mb-4">Our
+                            Story</span>
+                        <h2 class="text-4xl md:text-5xl font-serif text-[#1A1A1A] leading-tight">
+                            제주의 시간이 <br /> 만든 미담
+                        </h2>
+                    </div>
+                    <p class="text-lg text-[#555] font-light leading-relaxed">
+                        40만 년 전, 제주의 용암암반이 만들어졌습니다. 그 암반을 통과한 해수는 자연의 완벽한 여과 시스템을 거쳐, 중금속과 미세플라스틱 없이 정제되었습니다.
+                    </p>
+                    <p class="text-lg text-[#555] font-light leading-relaxed">
+                        바로 이 용암해수에서 나온 소금이 미담입니다. 단순한 짠맛이 아닌, 마그네슘, 칼슘, 칼륨이 자연스러운 황금비율로 어우러진 미네랄의 결정체.
+                    </p>
+                </div>
+
+                <div class="relative fade-in">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl bg-[#F9F7F2]">
+                        <img src="./images/about-2.png" alt="About Midam Story" class="w-full h-auto object-contain" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="relative py-32 md:py-56 bg-white overflow-hidden">
+        <!-- Background Image with Filters -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white"></div>
+            <img src="./images/about-3.png" alt="Philosophy Background"
+                class="w-full h-full object-cover grayscale opacity-20" />
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-8">
+            <div class="mb-24">
+                <span
+                    class="text-xs uppercase tracking-[0.3em] text-[#2D5A5E] font-bold block mb-4 fade-in">Philosophy</span>
+                <h2 class="text-4xl md:text-6xl font-serif text-[#1A1A1A] leading-tight fade-in">
+                    왜 미담인가?
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-6 fade-in">
+                    <div class="text-4xl font-serif text-[#2D5A5E]">01</div>
+                    <h3 class="text-2xl font-serif text-[#1A1A1A]">정직한 재료</h3>
+                    <p class="text-lg text-[#555] font-light leading-relaxed">
+                        화려한 마케팅과 연예인 모델 대신, 정직한 재료와 과학적 논리를 선택합니다.
+                    </p>
+                </div>
+
+                <div class="space-y-6 fade-in">
+                    <div class="text-4xl font-serif text-[#2D5A5E]">02</div>
+                    <h3 class="text-2xl font-serif text-[#1A1A1A]">미네랄 본질</h3>
+                    <p class="text-lg text-[#555] font-light leading-relaxed">
+                        산지의 이름이 아닌, 미네랄이라는 본질에 집중합니다. 그것이 진정한 맛입니다.
+                    </p>
+                </div>
+
+                <div class="space-y-6 fade-in">
+                    <div class="text-4xl font-serif text-[#2D5A5E]">03</div>
+                    <h3 class="text-2xl font-serif text-[#1A1A1A]">완벽한 순수함</h3>
+                    <p class="text-lg text-[#555] font-light leading-relaxed">
+                        지상 노출 없이 암반을 통해 여과된 용암해수. 완벽하게 격리된 순수함입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-32 md:py-56 bg-[#F9F7F2]">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="space-y-12 fade-in">
+                    <div>
+                        <span class="text-xs uppercase tracking-[0.3em] text-[#2D5A5E] font-bold block mb-4">Core
+                            Values</span>
+                        <h2 class="text-4xl md:text-5xl font-serif text-[#1A1A1A] leading-tight">
+                            설득하지 않는다
+                        </h2>
+                    </div>
+                    <p class="text-lg text-[#555] font-light leading-relaxed">
+                        미담은 설득하지 않습니다. 우리는 화려한 수식어와 연예인 모델 대신, 정직한 재료와 과학적 논리를 전합니다.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <span class="text-[#2D5A5E] font-bold text-lg mt-1">✓</span>
+                            <span class="text-[#555] font-light">읽다 보면 납득되고</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-[#2D5A5E] font-bold text-lg mt-1">✓</span>
+                            <span class="text-[#555] font-light">먹다 보면 이해되는 맛</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-[#2D5A5E] font-bold text-lg mt-1">✓</span>
+                            <span class="text-[#555] font-light">그것이 미담이 약속하는 방식</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl p-12 fade-in shadow-xl">
+                    <h3 class="text-3xl font-serif text-[#1A1A1A] mb-8">미담의 약속</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.2em] text-[#2D5A5E] font-bold mb-2">Quality</p>
+                            <p class="text-lg font-serif text-[#1A1A1A]">100% 제주 용암해수</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.2em] text-[#2D5A5E] font-bold mb-2">Purity</p>
+                            <p class="text-lg font-serif text-[#1A1A1A]">0% 미세플라스틱</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.2em] text-[#2D5A5E] font-bold mb-2">Heritage</p>
+                            <p class="text-lg font-serif text-[#1A1A1A]">400,000년의 자연 여과</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="relative py-32 md:py-56 bg-white overflow-hidden">
+        <!-- Background Image with Filters -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white"></div>
+            <img src="./images/about-5.png" alt="Impact Background"
+                class="w-full h-full object-cover grayscale opacity-20" />
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-8 text-center">
+            <span class="text-xs uppercase tracking-[0.5em] text-[#2D5A5E] font-bold mb-8 block fade-in">Impact</span>
+            <h2 class="text-4xl md:text-6xl font-serif text-[#1A1A1A] leading-tight mb-24 fade-in">
+                매일의 식탁이 <br /> 더 정직해질 때
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-12 md:ml-auto md:w-fit">
+                <div class="space-y-6 fade-in">
+                    <div class="text-5xl font-serif text-[#2D5A5E]">10+</div>
+                    <p class="text-lg text-[#555] font-light">Years of Research & Development</p>
+                </div>
+                <div class="space-y-6 fade-in">
+                    <div class="text-5xl font-serif text-[#2D5A5E]">∞</div>
+                    <p class="text-lg text-[#555] font-light">Commitment to Quality</p>
+                </div>
+                <div class="space-y-6 fade-in">
+                    <div class="text-5xl font-serif text-[#2D5A5E]">100%</div>
+                    <p class="text-lg text-[#555] font-light">Natural Mineral Balance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-48 md:py-72 bg-[#1A1A1A] text-white text-center relative">
+        <div class="max-w-7xl mx-auto px-8 fade-in">
+            <span class="text-xs uppercase tracking-[0.5em] text-[#2D5A5E] font-bold mb-8 block">Experience Midam</span>
+            <h2 class="text-5xl md:text-7xl font-serif text-white leading-tight mb-16 tracking-tight">
+                미담의 맛을 <br /> 경험해보세요.
+            </h2>
+            <a href="./index.html"
+                class="inline-block bg-[#2D5A5E] text-white px-16 py-8 text-xs font-black tracking-[0.4em] uppercase rounded-full hover:bg-white hover:text-[#2D5A5E] transition-all duration-500">
+                미담샵 스토어 →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-24 px-8 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-24 grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <div class="text-3xl font-serif tracking-tighter text-[#1A1A1A] font-black mb-10">MIDAM SHOP</div>
+                    <p class="text-gray-400 font-light leading-relaxed max-w-sm text-lg">
+                        우리는 제품을 늘리기보다 기준을 확장합니다. <br />
+                        매일의 식탁이 더 정직해야 한다는 믿음, <br />
+                        미담샵이 만드는 맛의 미학입니다.
+                    </p>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl bg-[#FFFFFF]">
+                        <img src="/images/about-7.png" alt="Midam Footer"
+                            class="w-full h-auto object-contain opacity-90 sepia-[0.15]" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[10px] text-gray-300 uppercase tracking-[0.3em] font-bold">© 2026 MIDAM SHOP. ALL RIGHTS
+                    RESERVED.</p>
+                <div class="flex gap-10">
+                    <a href="./index.html"
+                        class="text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold hover:text-[#1A1A1A]">Back
+                        to Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
